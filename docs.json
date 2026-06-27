@@ -5,5 +5,48 @@
     "links": [
       { "title": "docs.page", "href": "https://docs.page" }
     ]
-  }
+  },
+  "sidebar": [
+    {
+      "group": "Phase 1 — Optimized",
+      "pages": [
+        { "title": "System Design", "href": "/phase-1-optimized/01-system-design/01-system-design-p1", "icon": "book" },
+        { "title": "Marketing System n8n", "href": "/phase-1-optimized/02-marketing-system-n8n/02-marketing-system-n8n-p1", "icon": "book" },
+        { "title": "Simplify Bash Append", "href": "/phase-1-optimized/03-simplify-bash-append/03-simplify-bash-append-p1", "icon": "book" },
+        { "title": "Reddit Codex Node", "href": "/phase-1-optimized/04-reddit-codex-node/04-reddit-codex-node-p1", "icon": "book" },
+        { "title": "Bash Zsh Fish", "href": "/phase-1-optimized/05-bsh-zsh-fsh/05-bsh-zsh-fsh-p1", "icon": "book" },
+        { "title": "Auto Knowledge Graph", "href": "/phase-1-optimized/06-auto-knowledge-graph/06-auto-knowledge-graph-p1", "icon": "book" },
+        { "title": "MPV yt-dlp", "href": "/phase-1-optimized/07-mpv-ytdlp/07-mpv-ytdlp-p1", "icon": "book" },
+        { "title": "Docs Page", "href": "/phase-1-optimized/08-docs-page/08-docs-page-p1", "icon": "book" },
+        { "title": "Nushell", "href": "/phase-1-optimized/09-nushell/09-nushell-p1", "icon": "book" },
+        { "title": "Efficient Python", "href": "/phase-1-optimized/10-efficient-python/10-efficient-python-p1", "icon": "book" },
+        { "title": "Polished Dashboard", "href": "/phase-1-optimized/11-polished-dashboard/11-polished-dashboard-p1", "icon": "book" },
+        { "title": "GenAI Projects", "href": "/phase-1-optimized/12-genai-projects/12-genai-projects-p1", "icon": "book" },
+        { "title": "DevSecOps API Security", "href": "/phase-1-optimized/13-devSecOps-apiSec/13-devSecOps-apiSec-p1", "icon": "book" },
+        { "title": "Linux Netcat", "href": "/phase-1-optimized/14-linux-netcat/14-linux-netcat-p1", "icon": "book" },
+        { "title": "AI Cybersecurity Tools", "href": "/phase-1-optimized/15-ai-sybersec-tools/15-ai-sybersec-tools-p1", "icon": "book" },
+        { "title": "SSHamble SecOps", "href": "/phase-1-optimized/16-sshamble-secOps/16-sshamble-secOps-p1", "icon": "book" },
+        { "title": "Agentic AI", "href": "/phase-1-optimized/17-agentic-ai/17-agentic-ai-p1", "icon": "book" },
+        { "title": "Python Automation", "href": "/phase-1-optimized/18-python-automation/18-python-automation-p1", "icon": "book" },
+        { "title": "n8n Workflows", "href": "/phase-1-optimized/19-n8n-workflows/19-n8n-workflows-p1", "icon": "book" },
+        { "title": "Bash Scripting", "href": "/phase-1-optimized/20-bash-scripting/20-bash-scripting-p1", "icon": "book" },
+        { "title": "n8n Infra Scaling", "href": "/phase-1-optimized/21-n8ninfra-scaling/21-n8ninfra-scaling-p1", "icon": "book" },
+        { "title": "Regex Expression", "href": "/phase-1-optimized/22-regex-expression/22-regex-expression-p1", "icon": "book" },
+        { "title": "Linux CyberSec Beginners", "href": "/phase-1-optimized/23-linux-cybersec-beginners/23-linux-cybersec-beginners-p1", "icon": "book" },
+        { "title": "First MCP Server", "href": "/phase-1-optimized/24-first-mcp-server/24-first-mcp-server-p1", "icon": "book" },
+        { "title": "Claude Skills Building", "href": "/phase-1-optimized/25-claude-skills-building/25-claude-skills-building-p1", "icon": "book" },
+        { "title": "Small Context RAG", "href": "/phase-1-optimized/26-small-context-rag/26-small-context-rag-p1", "icon": "book" },
+        { "title": "Claude Code Ecosystem", "href": "/phase-1-optimized/27-claude-code-ecosystem/27-claude-code-ecosystem-p1", "icon": "book" },
+        { "title": "Claude Code Skills", "href": "/phase-1-optimized/28-claude-code-skills/28-claude-code-skills-p1", "icon": "book" }
+      ]
+    },
+    {
+      "group": "Phase 2 — Deeper Learning",
+      "pages": []
+    },
+    {
+      "group": "Phase 3 — Archived",
+      "pages": []
+    }
+  ]
 }
