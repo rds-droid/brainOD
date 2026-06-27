@@ -12,15 +12,10 @@ This is a **local reference note** about the [docs.page](https://docs.page) host
 ## What not to do
 
 - **Do not run builds, install deps, or look for tests** — no code, no manifest, no lockfile.
-- **Do not try `npx docs.page` or `@docs.page/cli` preview** — the CLI has no dev server.
+- **Do not try `npx docs.page` or `@docs.page/cli` preview** — the CLI has no dev server; this is a hosted-only platform.
 - **Do not edit the docs.page platform** — its source lives at `https://github.com/invertase/docs.page`.
-- **Do not use git** — per parent `AGENTS.md`, this is a scratchpad repo with no version control.
 - **Do not touch `serve.py` or the systemd service unless the user asks** — they are setup once and left running.
 
 ## Scope
 
 Add new `.md` / `.mdx` files to `docs/` — they become articles on the hosted site. Tick checkboxes in `readme.md` as setup progresses. The `guide.md` is reference; only update if the platform itself changes.
-
-## Parent conventions
-
-Governed by `/home/tera/Work/system/AGENTS.md`: lightweight system state scratchpad — no CI, no git.
