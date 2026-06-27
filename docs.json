@@ -1,0 +1,9 @@
+{
+  "header": {
+    "showName": true,
+    "showGitHubCard": false,
+    "links": [
+      { "title": "docs.page", "href": "https://docs.page" }
+    ]
+  }
+}

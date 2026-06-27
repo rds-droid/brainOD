@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>docspage</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         line-height: 1.7; color: #222; max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+  h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+  .sub { color: #666; margin-bottom: 2rem; }
+  .phase { margin: 1.5rem 0; padding: 1rem 1.2rem; border-radius: 8px; border: 1px solid #e5e7eb; }
+  .phase h2 { font-size: 1.2rem; margin-bottom: 0.3rem; }
+  .phase p { font-size: 0.9rem; color: #666; }
+  .phase ul { margin-top: 0.5rem; padding-left: 1.2rem; }
+  .phase li { margin: 0.2rem 0; }
+  .phase a { color: #2563eb; text-decoration: none; }
+  .phase a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<h1>docspage</h1>
+<p class="sub">Local documentation hub</p>
+
+<div class="phase">
+  <h2>Phase 1 — Optimized</h2>
+  <p>Ready-to-read reference docs</p>
+  <ul id="phase1-list"></ul>
+</div>
+
+<div class="phase">
+  <h2>Phase 2 — Deeper Learning</h2>
+  <p>Background and extended topics</p>
+  <ul id="phase2-list"></ul>
+</div>
+
+<div class="phase">
+  <h2>Phase 3 — Archived</h2>
+  <p>Completed docs kept for reference</p>
+  <ul id="phase3-list"></ul>
+</div>
+
+<script>
+async function loadPhase(dir, id) {
+  const res = await fetch(dir + "/");
+  const text = await res.text();
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(text, "text/html");
+  const links = doc.querySelectorAll("ul a");
+  const list = document.getElementById(id);
+  links.forEach(a => {
+    if (a.href.endsWith(".md") || a.href.endsWith(".mdx")) {
+      const li = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = a.getAttribute("href");
+      link.textContent = a.textContent.replace(/\.(md|mdx)$/, "").replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      li.appendChild(link);
+      list.appendChild(li);
+    }
+  });
+  if (!list.children.length) {
+    list.innerHTML = "<li style='color:#999'>No articles yet</li>";
+  }
+}
+loadPhase("phase-1-optimized", "phase1-list");
+loadPhase("phase-2-deep-learning", "phase2-list");
+loadPhase("phase-3-archived", "phase3-list");
+</script>
+</body>
+</html>
