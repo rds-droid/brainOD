@@ -20,7 +20,7 @@ live preview on pull requests.
 
 - [x] created a `docs.json` config
 - [x] wrote first Markdown doc pages
-- [ ] pushed to GitHub and verified the site is live
+- [x] pushed to GitHub and verified the site is live
 - [ ] installed the GitHub App for PR previews (optional)
 
 ## adding articles
